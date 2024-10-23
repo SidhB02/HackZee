@@ -15,7 +15,7 @@
                 <!-- Logo on the left side -->
                 <li class="logo">
                     <a href="#home">
-                        <img src="logo-placeholder.png" alt="Project Logo" class="logo-image">
+                        <img src="logo.png" alt="Project Logo" class="logo-image">
                     </a>
                 </li>
                 <li><a href="#home">Home</a></li>
@@ -25,7 +25,7 @@
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#parts-used">Parts Used</a></li>
                         <li><a href="#process">Process</a></li>
-                        <li><a href="#results">Results</a></li>
+                        <li><a href="#results">Impact</a></li>
                     </ul>
                 </li>
                 <li><a href="#team">Meet the Team</a></li>
@@ -57,32 +57,32 @@
             <div class="parts-container">
                 <div class="part">
                     <h4 style="color: #ffffff;">Raspberry Pi</h4>
-                    <img src="placeholder.jpg" alt="Raspberry Pi" class="part-image">
+                    <img src="RPI.png" alt="Raspberry Pi" class="part-image">
                     <p style="color: #ffffff;">A small, affordable computer used for various projects.</p>
                 </div>
                 <div class="part">
                     <h4 style="color: #ffffff;">Arduino UNO</h4>
-                    <img src="placeholder.jpg" alt="Arduino UNO" class="part-image">
+                    <img src="Arduino.png" alt="Arduino UNO" class="part-image">
                     <p style="color: #ffffff;">An open-source microcontroller board for building interactive projects.</p>
                 </div>
                 <div class="part">
                     <h4 style="color: #ffffff;">Servo Motor</h4>
-                    <img src="placeholder.jpg" alt="Servo Motor" class="part-image">
+                    <img src="Servo_Motor.png" alt="Servo Motor" class="part-image">
                     <p style="color: #ffffff;">A motor that allows for precise control of angular position.</p>
                 </div>
                 <div class="part">
                     <h4 style="color: #ffffff;">4x4 Membrane Keypad</h4>
-                    <img src="placeholder.jpg" alt="4x4 Membrane Keypad" class="part-image">
+                    <img src="Keypad.png" alt="4x4 Membrane Keypad" class="part-image">
                     <p style="color: #ffffff;">A keypad for user input, allowing for various commands.</p>
                 </div>
                 <div class="part">
                     <h4 style="color: #ffffff;">Load Cell with HX711 Module</h4>
-                    <img src="placeholder.jpg" alt="Load Cell with HX711 Module" class="part-image">
+                    <img src="LoadCell_HX711.png" alt="Load Cell with HX711 Module" class="part-image">
                     <p style="color: #ffffff;">A sensor that measures weight, often used in scale applications.</p>
                 </div>
                 <div class="part">
                     <h4 style="color: #ffffff;">LCD Display</h4>
-                    <img src="placeholder.jpg" alt="LCD Display" class="part-image">
+                    <img src="LCD.png" alt="LCD Display" class="part-image">
                     <p style="color: #ffffff;">A display module that provides visual output for the system.</p>
                 </div>
             </div>
@@ -91,13 +91,67 @@
         <!-- Process Section -->
         <section id="process" class="process-section">
             <h3>Process</h3>
-            <p>Explain the steps followed during the project development, including key milestones and challenges.</p>
+            <h4>User Registration and Authentication</h4>
+            <p>Eligibility Verification: Individuals register with the system by providing identification 
+                to confirm their eligibility for receiving rations.</p>
+            <p>User Data Management: The system stores user information
+                in a central database, ensuring secure and easy access for future transactions.</p>
+            <h4>Ration Distribution Process</h4>
+            <p>User Check-In: Beneficiaries arrive at the distribution center and authenticate themselves using their ration ID.
+                The system verifies their identity and checks their eligibility for the current cycle.</p>
+            <p>Selection of Ration Items: Users can select the items they are entitled to receive. The system displays their 
+                available balance and updates the distribution records automatically as items are dispensed.</p>
+            <p>Automated Dispensing: A mechanized dispensing system, using servo motor and load cell with HX711 module,
+                 releases the selected ration items onto the load cell which weighs and stops the dispensing when the required wight is reached.</p>
+            
         </section>
 
         <!-- Results Section -->
         <section id="results" class="results-section">
-            <h3>Results</h3>
-            <p>Summarize the outcomes, findings, or achievements of the project and any future improvements.</p>
+            <h3>Impact</h3>
+            <h4>Improved Efficiency in Distribution</h4>
+            <p>Reduction in Manual Labor: By automating tasks like inventory management, beneficiary verification, and distribution, the system
+                 drastically reduces the amount of manual labor required.</p>
+            <h4>Increased Transparency and Accountability</h4>
+            <p>Elimination of Middlemen: Direct dispensing to beneficiaries reduces opportunities for corruption or diversion of rations by middlemen.</p>
+            <p>Audit Trails and Monitoring: Every transaction is logged, creating a comprehensive audit trail that can be reviewed for discrepancies, ensuring accountability in the distribution
+                 process.</p>
+            <p>Reduced Fraud: Secure authentication methods (e.g., biometric verification or ration ID) ensure that only eligible beneficiaries receive rations, reducing cases of identity fraud
+                 or misallocation.</p>
+            <h4>Enhanced Access to Rations</h4>
+            <p>Greater Reach: The system can be deployed in remote or underserved areas where traditional ration distribution may be inconsistent, ensuring that rations reach even the most 
+                marginalized populations.</p>
+            <p> Equitable Distribution: The system ensures that all eligible beneficiaries receive the appropriate quantity of rations based on their entitlement, promoting fairness in the distribution
+                 process.</p>
+            <h4>Social Impact and Welfare</h4>
+            <p>Improved Food Security: By ensuring that rations reach beneficiaries consistently and on time, the system helps improve food security, particularly for low-income families and 
+                vulnerable populations.</p>
+            <p>Reduction in Hunger: The system supports governmental and non-governmental organizations in their efforts to combat hunger, ensuring that basic needs like food are met 
+                efficiently.</p>
+            <p>Empowerment of Communities: Transparent and reliable access to rations builds trust in the system, empowering communities to engage with and benefit from social welfare programs more 
+                effectively.</p>
+            <h4>Data-Driven Policy Making</h4>
+            <p>Informed Decision Making: The system collects large amounts of data related to demand, distribution patterns, and user feedback. This data can be used by policymakers to identify areas of improvement, 
+                forecast future demand, and adjust ration quotas as needed.</p>
+            <p>Targeted Support: Authorities can identify regions or communities that are under-served or over-supplied and adjust resource allocation accordingly, ensuring that rations are distributed based on 
+                actual needs.</p>
+            <p>Adaptability in Crises: During emergencies such as natural disasters or pandemics, the system can quickly scale up distribution efforts and prioritize affected areas, ensuring rapid and targeted 
+                relief efforts.</p> 
+            <h4>Cost Savings for Governments and Organizations</h4>
+            <p>Reduced Administrative Costs: By automating key functions like inventory management and beneficiary verification, the system reduces the need for extensive human resources, lowering 
+                administrative expenses.</p>
+            <p>Minimization of Losses: Real-time monitoring of rations and automated alerts help reduce losses due to spoilage, theft, or mismanagement, contributing to more 
+                cost-effective operations.</p>
+            <p>Better Resource Allocation: The system’s data analytics capabilities help in optimizing procurement and distribution schedules, ensuring that resources are used efficiently and 
+                reducing the costs of over-provisioning.</p>
+            <h4>Technological Advancement and Innovation</h4>
+            <p>Promotion of Digital Inclusion: As the system leverages digital technologies like IoT, biometric verification, and data analytics, it fosters digital literacy and inclusion, 
+                especially among rural populations.</p>
+            <p>Encouraging Technological Adoption: Communities and local authorities become more familiar with and open to adopting technological solutions for other public services, creating a positive 
+                ripple effect in public administration.</p>
+            <h4>Improved Public Trust</h4>
+            <p>Transparency Builds Trust: When people see that the system is efficient, fair, and secure, public trust in government welfare programs increases, improving relations between 
+                citizens and public institutions.</p>
         </section>
     </section>
 
@@ -116,7 +170,7 @@
 
             <!-- Team Member 2 -->
             <div class="team-member">
-                <img src="placeholder.jpg" alt="Siddharth Bhat" class="team-photo">
+                <img src="SidhB.jpg" alt="Siddharth Bhat" class="team-photo">
                 <h3>Siddharth Bhat</h3>
                 <p><a href="mailto:sidhb0222@gmail.com">sidhb0222@gmail.com</a></p>
                 <p><a href="tel:+919591824286">+91 9591824286</a></p>
