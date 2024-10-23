@@ -90,10 +90,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/*.dropdown-content li a:hover {
-    background-color:white;
-}*/
-
 /* Hero Section */
 .hero {
     background-color: #005f99; /* Blue */
@@ -109,6 +105,28 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.7em;
 }
+
+/* Typing Effect for Hero Section */
+.typing {
+    font-family: Arial, sans-serif;
+    border-right: 3px solid;
+    width: 46ch; /* Adjusted to fit full text */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(46), blink .75s step-end infinite;
+    margin: 0 auto; /* Centers the text */
+    display: inline-block; /* Ensures proper centering */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 46ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
 
 /* Section Styles */
 section {
